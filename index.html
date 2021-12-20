@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            #btndate{
+               background-color: aqua;
+                transition: all ease 0.5s;
+            }
+            #btndate:hover{
+                border-radius: 20px;
+                background-color: crimson;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Click To See What Happen!</p>
+        <button type="button" id="btndate" onclick="MYFunction()">Try Me!</button>
+    <script>
+      function MYFunction(){
+        var message;
+        switch(new Date().getDay()){
+            case 0:
+            message=window.alert("امروز:یکشنبه");
+            break;
+            case 1:
+            message=window.alert("امروز:دوشنبه");
+            break;
+            case 2:
+            message=window.alert("امروز:سه شنبه");
+            break;
+            case 3:
+            message=window.alert("امروز:چهارشنبه");
+            break;
+            case 4:
+            message=window.alert("امروز:پنج شنبه");
+            break;
+            case 5:
+            message=window.alert("امروز:جمعه");
+            break;
+            case 6:
+            message=window.alert("امروز:شنبه");
+            break;
+        }
+    }
+    </script>
+    </body>
+</html>
